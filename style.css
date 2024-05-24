@@ -10,7 +10,6 @@
 html{
     scroll-behavior: smooth;
 }
-
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -63,7 +62,8 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: rgb(211, 204, 226);
+    /* background: rgb(211, 204, 226); */
+    background-color: rgb(64, 8, 117); 
     transform: translateX(-50%);
 }
 section .title::after{
@@ -107,9 +107,11 @@ section .title::after{
 .navbar.sticky .logo a span{
     color: #fff;
 }
+
 .navbar .menu li{
     list-style: none;
     display: inline-block;
+    
 }
 .navbar .menu li a{
     display: block;
@@ -523,7 +525,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: rgb(211, 204, 226);
+        background-color:rgb(64, 8, 117);
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
