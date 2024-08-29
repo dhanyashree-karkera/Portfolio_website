@@ -71,22 +71,3 @@ $(document).ready(function(){
         }
     });
 });
-
-
-const scriptURL =
-  "https://script.google.com/macros/s/AKfycbxd3_r4vzl5kIs1zjZafq0ak-L1K0Zbnv0nqTDhjtrQGm2nMDrHLwyBiLUM3M51yGNX9Q/exec";
-const form = document.forms["submit-to-google-sheet"];
-const msg = document.getElementById("msg");
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => {
-      msg.innerHTML = "Message Sent successfully!";
-      setTimeout(function () {
-        msg.innerHTML = "";
-      }, 5000);
-      form.reset();
-    })
-    .catch((error) => console.error("Error!", error.message));
-});
