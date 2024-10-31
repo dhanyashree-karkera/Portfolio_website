@@ -122,7 +122,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: rgb(64, 8, 117);
+    color: rgb(183, 150, 204);
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
